@@ -16,7 +16,7 @@ def validate_field(field):
 writer = csv.writer(open(paramaters.file_name, 'wb'))
 writer.writerow(['Name', 'Job Title', 'School', 'Location', 'URL'])
 
-driver = webdriver.Chrome('/home/lazar/Dropbox/chromedriver')
+driver = webdriver.Chrome('/home/sim/Dropbox/chromedriver')
 driver.get('https://www.linkedin.com')
 
 username = driver.find_element_by_class_name('login-email')
@@ -69,13 +69,13 @@ for linkedin_url in linkedin_urls:
     location = validate_field(location)
     linkedin_url = validate_field(linkedin_url)
 
-    print '\n'
-    print 'Name: ' + name
-    print 'Job Title: ' + job_title
-    print 'School: ' + school
-    print 'Location: ' + location
-    print 'URL: ' + linkedin_url
-    print '\n'
+    print('\n')
+    print('Name: ' + name)
+    print('Job Title: ' + job_title)
+    print('School: ' + school)
+    print('Location: ' + location)
+    print('URL: ' + linkedin_url)
+    print('\n')
 
     writer.writerow([name.encode('utf-8'),
                      job_title.encode('utf-8'),
