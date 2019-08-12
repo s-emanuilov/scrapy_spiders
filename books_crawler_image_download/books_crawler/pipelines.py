@@ -8,7 +8,7 @@ import os
 
 class BooksCrawlerPipeline(object):
     def process_item(self, item, spider):
-        os.chdir('/home/lazar/Desktop/foobar')
+        os.chdir('/home/sim/Desktop/foobar')
 
         if item['images'][0]['path']:
             new_image_name = item['title'][0] + '.jpg'

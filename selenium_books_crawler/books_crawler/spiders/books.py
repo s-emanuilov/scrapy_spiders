@@ -13,7 +13,7 @@ class BooksSpider(Spider):
     allowed_domains = ['books.toscrape.com']
 
     def start_requests(self):
-        self.driver = webdriver.Chrome('/home/lazar/chromedriver')
+        self.driver = webdriver.Chrome('/home/sim/chromedriver')
         self.driver.get('http://books.toscrape.com')
 
         sel = Selector(text=self.driver.page_source)
