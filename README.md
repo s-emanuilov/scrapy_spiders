@@ -1,5 +1,5 @@
 # Scrapy Spiders - examples and concepts
-This repository is a list of very common scrapy spiders.
+This repository is a list of common scrapy spiders.
 
 **Official repo:** https://github.com/scrapy/scrapy  
 **Scrapy Deamon:** https://github.com/scrapy/scrapyd
